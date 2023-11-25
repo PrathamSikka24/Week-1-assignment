@@ -8,7 +8,26 @@
 */
 
 function isAnagram(str1, str2) {
-
-}
+  let arr1=[];
+  let arr2=[];
+  arr1=str1.split("")
+  arr2=str2.split("") 
+  let i=0;
+  arr1.sort()
+  arr2.sort()
+  let count=0
+  while(i<arr1.length){
+  
+      if(arr1[i]== arr2[i]){
+          count+=1;
+      }
+      else{return false}
+      
+  }
+if(count==arr1.length)
+{
+  return true
+}}
 
 module.exports = isAnagram;
+
